@@ -1,0 +1,393 @@
+/* **************************Global Classes**************************** */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary-color: #272D38;
+}
+
+.whiteSpacing {
+    padding-left: 176px !important;
+    padding-right: 176px !important;
+}
+
+.m-whiteSpacing {
+    margin-left: 176px !important;
+    margin-right: 176px !important;
+}
+
+.nav-shadow {
+    width: 679px;
+    height: 679px;
+    background-color: #8EADD53D;
+    filter: blur(60px);
+    left: -20% !important;
+}
+
+.p-t-46 {
+    padding-top: 46px !important;
+}
+
+.p-t-188 {
+    padding-top: 188px !important;
+}
+
+.m-t-section {
+    margin-top: 68px;
+}
+
+/* ****************header => nav styling************** */
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-brand:focus {
+    outline: none;
+}
+
+.navbar-nav {
+    gap: 50px;
+}
+
+.nav-link {
+    font-size: 18px !important;
+    color: var(--primary-color) !important;
+}
+
+/* **************** header => hero styling****************** */
+.hero_left h1 {
+    max-width: 540px;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.hero_left .hero-description {
+    max-width: 525px;
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-top: 24px;
+    margin-bottom: 39px;
+}
+
+.btn {
+    width: 176px !important;
+    height: 48px !important;
+    background: #8EADD5 !important;
+    border-radius: 8px !important;
+}
+
+.btn:hover {
+    background-color: blue !important;
+}
+
+.hero_right {
+    width: 450px;
+}
+
+/* ************** companies section styling ****************** */
+#companies {
+    margin-top: 157px;
+
+    .logos-container {
+        width: 63.541vw;
+        background: #F6F6F6;
+        padding: 19px 24px;
+
+        .logo {
+            width: 98px;
+        }
+    }
+}
+
+/* ***************** branding & custome sections shared styling **************** */
+.branding-left,
+.custome_right {
+    width: 450px;
+}
+
+.branding-right h2,
+.custome_left h2 {
+    max-width: 435px;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.arrow_right {
+    width: 22px;
+    cursor: pointer;
+}
+
+.branding-right .branding-description,
+.custome_left .custome_description {
+    max-width: 392px;
+    line-height: 27.5px;
+    color: var(--primary-color);
+    margin-top: 25.6px;
+}
+
+/* ****************** reviews section (Cards slider) styling ************** */
+#reviews {
+    .reviews_description {
+        line-height: 27.5px;
+        color: var(--primary-color);
+    }
+
+    h2 {
+        font-size: 3rem;
+        max-width: 435px;
+        margin-bottom: 38.65px !important;
+        color: var(--primary-color);
+    }
+}
+
+.carousel-inner {
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 345px !important;
+    border-radius: 20px !important;
+    background: #F6F6F6 !important;
+    padding: 2rem !important;
+
+    .card-title {
+        margin-bottom: 27px !important;
+        color: var(--primary-color);
+    }
+
+    .card-text {
+        max-width: 281px !important;
+        font-size: 14px;
+        color: var(--primary-color);
+    }
+}
+
+.cards_container img {
+    width: 129px;
+    border: 1px solid #DEDCDB80 !important;
+    border-radius: 96.5px;
+}
+
+.carousel-indicators {
+    gap: 24px;
+
+    button {
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        border: 3px solid #8EADD5 !important;
+    }
+
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1 !important;
+}
+
+.carousel-indicators button:focus {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    border: none !important;
+    background-color: #8EADD5 !important;
+}
+
+/* ****************** contact section ************** */
+#contact {
+    border-radius: 20px;
+    background: #F6F6F6;
+    padding-right: 89px;
+    padding-left: 75px;
+}
+
+.contact-padding {
+    padding: 100px 0;
+}
+
+.contact-right h2 {
+    max-width: 361px;
+    font-size: 3rem;
+}
+
+.contact-right .contact-description {
+    max-width: 360px;
+    line-height: 27.5px;
+}
+
+/* ************************** footer styling *************************** */
+footer {
+    background: #F6F6F6;
+    padding-top: 105px;
+
+    .brand-description {
+        max-width: 189.29px;
+
+        a {
+            color: var(--primary-color);
+            font-size: 18px;
+        }
+    }
+
+    .footer-description {
+        margin-top: 40px;
+        color: var(--primary-color);
+        font-size: 1rem;
+    }
+
+    ul {
+        max-width: 141px;
+        gap: 24px;
+
+        li {
+            color: var(--primary-color);
+            font-size: 18px;
+        }
+
+        a {
+            color: var(--primary-color);
+            font-size: 1rem;
+        }
+    }
+
+    .copyright {
+        margin-top: 110px;
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    /* **************small screens global classes ******************* */
+    .m-t-section {
+        margin-top: 120px;
+    }
+
+    .whiteSpacing {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .m-whiteSpacing {
+        margin-left: 24px !important;
+        margin-right: 24px !important;
+    }
+
+    /* ******************************* small screen nav styling ******************* */
+    .navbar-brand {
+        font-size: 14px !important;
+        text-transform: capitalize;
+    }
+
+    /* ******************************* small screen hero styling ******************* */
+    .hero_left {
+        margin: 0 auto 46px;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+        }
+
+        .btn {
+            width: 140px !important;
+            height: 35px !important;
+            font-size: 14px;
+        }
+    }
+
+    .hero_right {
+        max-width: 100%;
+    }
+
+    /* ******************************* small screen companies section styling ******************* */
+    #companies {
+        margin-top: 120px;
+    }
+
+    .logos-container {
+        width: 100% !important;
+        padding: 31px 16px;
+        max-width: 610px;
+
+        .logo {
+            width: 49px !important;
+        }
+    }
+
+    /* ******* small screeens branding & custome sections shared styling ****** */
+    #branding {
+        margin-top: 88px;
+    }
+
+    #custome {
+        margin-top: 120px;
+    }
+
+    .branding-left,
+    .custome_right {
+        max-width: 100%;
+    }
+
+    .branding-right,
+    .custome_left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .branding-right h2,
+    .custome_left h2 {
+        font-size: 2rem;
+    }
+
+    .branding-right .branding-description,
+    .custome_left .custome_description {
+        font-size: 14px;
+    }
+
+    .arrow_right {
+        transform: rotate(90deg);
+        margin-bottom: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+
+    /* ******************** small screens reviews section styling ************* */
+    #reviews h2 {
+        font-size: 2rem;
+    }
+
+    #reviews .reviews_description {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 374px !important;
+    }
+
+    /* ********************** contact section small screen styling *************** */
+    .contact-padding {
+        padding: 56px 0 49px;
+    }
+
+    .contact-right {
+        text-align: center;
+    }
+
+    /* ******************* small screens footer styling ********************** */
+    .lists-container {
+        gap: 72px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 92px;
+    }
+}
