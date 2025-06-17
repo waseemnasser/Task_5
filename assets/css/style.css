@@ -166,6 +166,10 @@
     }
 }
 
+.cards_container {
+    gap: 15px;
+}
+
 .cards_container img {
     width: 129px;
     border: 1px solid #DEDCDB80 !important;
