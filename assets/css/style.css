@@ -293,7 +293,7 @@ footer {
         text-align: center;
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 40px !important;
         }
 
         .hero-description {
@@ -382,6 +382,10 @@ footer {
 
     .contact-right {
         text-align: center;
+
+        h2 {
+            font-size: 2rem;
+        }
     }
 
     /* ******************* small screens footer styling ********************** */
