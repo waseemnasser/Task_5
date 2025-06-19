@@ -10,6 +10,17 @@
     --primary-color: #272D38;
 }
 
+.main-color {
+    color: var(--primary-color);
+}
+
+.shadow {
+    width: 679px;
+    height: 679px;
+    background-color: #8EADD53D;
+    filter: blur(60px);
+}
+
 .whiteSpacing {
     padding-left: 176px !important;
     padding-right: 176px !important;
@@ -19,14 +30,6 @@
     margin-left: 176px !important;
     margin-right: 176px !important;
 }
-
-/* .nav-shadow {
-    width: 679px;
-    height: 679px;
-    background-color: #8EADD53D;
-    filter: blur(60px);
-    left: -20% !important;
-} */
 
 .p-t-46 {
     padding-top: 46px !important;
@@ -40,11 +43,15 @@
     margin-top: 68px;
 }
 
-/* ****************header => nav styling************** */
-.navbar-brand {
-    font-size: 20px;
+.p-t-section {
+    padding-top: 68px;
 }
 
+.m-b-space {
+    margin-bottom: 45px;
+}
+
+/* ****************header => nav styling************** */
 .navbar-brand:focus {
     outline: none;
 }
@@ -55,20 +62,21 @@
 
 .nav-link {
     font-size: 18px !important;
-    color: var(--primary-color) !important;
 }
 
 /* **************** header => hero styling****************** */
+.shadow-hero {
+    transform: translate(-75%, -80%);
+}
+
 .hero_left h1 {
     max-width: 540px;
-    color: var(--primary-color);
     font-size: 4rem;
 }
 
 .hero_left .hero-description {
     max-width: 525px;
     font-size: 18px;
-    color: var(--primary-color);
     margin-top: 24px;
     margin-bottom: 39px;
 }
@@ -104,6 +112,14 @@
 }
 
 /* ***************** branding & custome sections shared styling **************** */
+#branding {
+    background: radial-gradient(circle 679px at bottom right, rgba(35, 19, 104, 0.156), transparent 70%);
+}
+
+#custome {
+    background: radial-gradient(circle 679px at top right, rgba(35, 19, 104, 0.156), transparent 70%);
+}
+
 .branding-left,
 .custome_right {
     width: 450px;
@@ -113,7 +129,6 @@
 .custome_left h2 {
     max-width: 435px;
     font-size: 3rem;
-    color: var(--primary-color);
 }
 
 .arrow_right {
@@ -124,18 +139,11 @@
 .branding-right .branding-description,
 .custome_left .custome_description {
     max-width: 392px;
-    line-height: 27.5px;
-    color: var(--primary-color);
     margin-top: 25.6px;
 }
 
 /* ****************** reviews section (Cards slider) styling ************** */
 #reviews {
-    .reviews_description {
-        line-height: 27.5px;
-        color: var(--primary-color);
-    }
-
     h2 {
         font-size: 3rem;
         max-width: 435px;
@@ -144,36 +152,48 @@
     }
 }
 
-.carousel-inner {
-    margin-bottom: 40px;
-}
-
 .card {
-    width: 345px !important;
+    width: calc(100% - (45px/3));
     border-radius: 20px !important;
     background: #F6F6F6 !important;
     padding: 2rem !important;
 
     .card-title {
         margin-bottom: 27px !important;
-        color: var(--primary-color);
     }
 
     .card-text {
         max-width: 281px !important;
         font-size: 14px;
-        color: var(--primary-color);
     }
 }
 
-.cards_container {
-    gap: 15px;
+.carousel-inner {
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3);
+    transition: transform 0.6s ease;
+    margin-bottom: 40px;
+
+    img {
+        width: 129px;
+        border: 1px solid #DEDCDB80 !important;
+        border-radius: 96.5px;
+    }
 }
 
-.cards_container img {
-    width: 129px;
-    border: 1px solid #DEDCDB80 !important;
-    border-radius: 96.5px;
+#carouselExampleIndicators:has(button[data-bs-slide-to="0"].active) .carousel-item {
+    transform: translateX(0%);
+    display: block;
+}
+
+#carouselExampleIndicators:has(button[data-bs-slide-to="1"].active) .carousel-item {
+    transform: translateX(-100%);
+    display: block;
+}
+
+#carouselExampleIndicators:has(button[data-bs-slide-to="2"].active) .carousel-item {
+    transform: translateX(-200%);
+    display: block;
 }
 
 .carousel-indicators {
@@ -182,17 +202,15 @@
     button {
         width: 12px !important;
         height: 12px !important;
-        border-radius: 50%;
         border: 3px solid #8EADD5 !important;
     }
-
 }
 
 .carousel-indicators [data-bs-target] {
     opacity: 1 !important;
 }
 
-.carousel-indicators button:focus {
+.carousel-indicators button.active {
     width: 1.5rem !important;
     height: 1.5rem !important;
     border: none !important;
@@ -218,7 +236,6 @@
 
 .contact-right .contact-description {
     max-width: 360px;
-    line-height: 27.5px;
 }
 
 /* ************************** footer styling *************************** */
@@ -230,15 +247,12 @@ footer {
         max-width: 189.29px;
 
         a {
-            color: var(--primary-color);
             font-size: 18px;
         }
     }
 
     .footer-description {
         margin-top: 40px;
-        color: var(--primary-color);
-        font-size: 1rem;
     }
 
     ul {
@@ -246,29 +260,37 @@ footer {
         gap: 24px;
 
         li {
-            color: var(--primary-color);
             font-size: 18px;
         }
 
         a {
-            color: var(--primary-color);
             font-size: 1rem;
         }
     }
 
     .copyright {
         margin-top: 110px;
-        padding-bottom: 1rem;
     }
 }
-
-
 
 @media screen and (max-width:992px) {
 
     /* **************small screens global classes ******************* */
+    .shadow {
+        width: 449px;
+        height: 449px;
+    }
+
     .m-t-section {
         margin-top: 120px;
+    }
+
+    .p-t-section {
+        padding-top: 120px;
+    }
+
+    .m-b-space {
+        margin-bottom: 0px;
     }
 
     .whiteSpacing {
@@ -284,7 +306,6 @@ footer {
     /* ******************************* small screen nav styling ******************* */
     .navbar-brand {
         font-size: 14px !important;
-        text-transform: capitalize;
     }
 
     /* ******************************* small screen hero styling ******************* */
@@ -294,10 +315,6 @@ footer {
 
         h1 {
             font-size: 40px !important;
-        }
-
-        .hero-description {
-            font-size: 1rem;
         }
 
         .btn {
@@ -329,10 +346,11 @@ footer {
     /* ******* small screeens branding & custome sections shared styling ****** */
     #branding {
         margin-top: 88px;
+        background: radial-gradient(circle 449px at bottom right, rgba(35, 19, 104, 0.156), transparent 70%);
     }
 
     #custome {
-        margin-top: 120px;
+        background: radial-gradient(circle 449px at top right, rgba(35, 19, 104, 0.156), transparent 70%);
     }
 
     .branding-left,
@@ -342,12 +360,12 @@ footer {
 
     .branding-right,
     .custome_left {
-        align-items: center;
         text-align: center;
     }
 
     .branding-right h2,
-    .custome_left h2 {
+    .custome_left h2,
+    #reviews h2 {
         font-size: 2rem;
     }
 
@@ -363,16 +381,29 @@ footer {
     }
 
     /* ******************** small screens reviews section styling ************* */
-    #reviews h2 {
-        font-size: 2rem;
-    }
 
     #reviews .reviews_description {
         font-size: 12px;
     }
 
+    .carousel-inner {
+        grid-auto-flow: column;
+        grid-auto-columns: calc(100%/1);
+        transition: transform 0.6s ease;
+    }
+
+    #carouselExampleIndicators:has(button[data-bs-slide-to="3"].active) .carousel-item {
+        transform: translateX(-300%);
+        display: block;
+    }
+
+    #carouselExampleIndicators:has(button[data-bs-slide-to="4"].active) .carousel-item {
+        transform: translateX(-400%);
+        display: block;
+    }
+
     .card {
-        width: 374px !important;
+        max-width: 100% !important;
     }
 
     /* ********************** contact section small screen styling *************** */
@@ -391,7 +422,6 @@ footer {
     /* ******************* small screens footer styling ********************** */
     .lists-container {
         gap: 72px;
-        align-items: center;
         text-align: center;
     }
 

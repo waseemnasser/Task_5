@@ -13,11 +13,12 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg whiteSpacing p-t-46 position-fixed w-100 bg-white z-2 position-relative">
-            <!-- <div class="nav-shadow position-absolute overflow-hidden rounded-circle z-3"></div> -->
+    <!-- ***************** header ********************** -->
+    <header class="position-relative">
+        <nav class="navbar navbar-expand-lg whiteSpacing p-t-46 w-100 bg-white z-2 position-fixed">
+            <div class="hero-shadow rounded-circle position-absolute border-0 top-0 left-0 z-3"></div>
             <div class="container-fluid p-0">
-                <a class="navbar-brand text-uppercase p-0 fw-bold" href="#">Digital Agency</a>
+                <a class="navbar-brand text-uppercase p-0 fw-bold fs-5" href="#">Digital Agency</a>
                 <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,19 +26,22 @@
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link p-0 fw-normal" aria-current="page" href="#">home</a>
-                        <a class="nav-link p-0 fw-normal" href="#">about</a>
-                        <a class="nav-link p-0 fw-normal" href="#">testimonials</a>
-                        <a class="nav-link p-0 fw-normal" href="#">contact</a>
+                        <a class="nav-link main-color p-0 fw-normal" aria-current="page" href="#">home</a>
+                        <a class="nav-link main-color p-0 fw-normal" href="#">about</a>
+                        <a class="nav-link main-color p-0 fw-normal" href="#">testimonials</a>
+                        <a class="nav-link main-color p-0 fw-normal" href="#">contact</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- ******************************** hero ****************************** -->
         <div id="hero"
-            class="whiteSpacing d-flex flex-lg-row flex-column justify-content-lg-between  align-items-center p-t-188">
+            class="whiteSpacing d-flex flex-lg-row flex-column justify-content-lg-between align-items-center p-t-188">
             <div class="hero_left">
-                <h1 class="text-capitalize fw-bold">Building digital products, brands & experience</h1>
-                <p class="hero-description text-capitalize fw-normal">Digital Agency is your online team mangement tool
+                <h1 class="text-capitalize fw-bold main-color">Building digital products, brands & experience</h1>
+                <div class="shadow shadow-hero position-absolute rounded-circle z-3"></div>
+                <p class="hero-description text-capitalize fw-normal main-color main-color">Digital Agency is your
+                    online team mangement tool
                     that easy
                     and prompt</p>
                 <button class="btn btn-primary text-uppercase border-0 p-0 fw-semibold" type="submit">Contact
@@ -49,8 +53,9 @@
         </div>
     </header>
     <main>
+        <!-- ********************** companies section *********************** -->
         <section id="companies" class="whiteSpacing d-flex flex-column align-items-center">
-            <p class="companies-description">Trusted by 4,000+ companies</p>
+            <p class="companies-description main-color">Trusted by 4,000+ companies</p>
             <div class="logos-container d-flex justify-content-between rounded-2">
                 <img class="logo" src="./assets/imgs/spotify.svg" alt="spotify logo">
                 <img class="logo" src="./assets/imgs/slack.svg" alt="slack logo">
@@ -58,26 +63,29 @@
                 <img class="logo" src="./assets/imgs/zoom.svg" alt="zoom logo">
             </div>
         </section>
+        <!-- ********************* branding section ************************** -->
         <section id="branding"
             class="d-flex flex-lg-row justify-content-lg-between flex-column-reverse whiteSpacing align-items-center m-t-section">
             <div class="branding-left">
                 <img class="w-100 h-100" src="./assets/imgs/design_team.png" alt="design team">
             </div>
-            <div class="branding-right d-flex flex-column">
-                <h2 class="text-capitalize fw-bold">Branding & Design system</h2>
-                <p class="branding-description text-capitalize fw-normal">Commonly used in the graphic, print &
+            <div class="branding-right d-flex flex-column align-items-center align-items-lg-start">
+                <h2 class="text-capitalize fw-bold main-color">Branding & Design system</h2>
+                <p class="branding-description text-capitalize fw-normal main-color m-b-space">Commonly used in the graphic, print
+                    &
                     publishing industris
                     for previewing
                     visual layout and mockups</p>
                 <img class="arrow_right" src="./assets/imgs/arrow_right.svg" alt="arrow right">
             </div>
-            <!-- <div class="shadow_circle position-absolute overflow-hidden rounded-circle z-3"></div> -->
         </section>
+        <!-- ********************** custome section ************************* -->
         <section id="custome"
-            class="d-flex flex-lg-row flex-column justify-content-between whiteSpacing align-items-center m-t-section">
-            <div class="custome_left d-flex flex-column">
-                <h2 class="text-capitalize fw-bold">Custome & Plugin Development</h2>
-                <p class="custome_description text-capitalize fw-normal">Commonly used in the graphic, print &
+            class="d-flex flex-lg-row flex-column justify-content-between whiteSpacing align-items-center p-t-section position-relative">
+            <div class="custome_left d-flex flex-column align-items-lg-start align-items-center text-lg-left">
+                <h2 class="text-capitalize fw-bold main-color">Custome & Plugin Development</h2>
+                <p class="custome_description text-capitalize fw-normal main-color m-b-space">Commonly used in the graphic, print
+                    &
                     publishing industris
                     for previewing
                     visual layout and mockups
@@ -85,205 +93,143 @@
                 <img class="arrow_right" src="./assets/imgs/arrow_right.svg" alt="arrow right">
             </div>
             <div class="custome_right">
+                <!-- <div class="shadow-section shadow position-absolute z-3"></div> -->
                 <img class="w-100 h-100" src="./assets/imgs/business_man.png" alt="business man">
             </div>
         </section>
+        <!-- ******************* reviews section *************************** -->
         <section id="reviews" class="whiteSpacing m-t-section">
-            <p class="reviews_description text-center text-uppercase fw-normal">testimonials</p>
-            <h2 class="text-center text-capitalize m-auto fw-bold">Read What Other have to Say</h2>
+            <p class="reviews_description text-center text-uppercase fw-normal main-color">testimonials</p>
+            <h2 class="text-center text-capitalize m-auto fw-bold main-color main-color">Read What Other have to Say
+            </h2>
             <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <div class="cards_container d-flex justify-content-lg-between justify-content-center">
-                            <div class="card flex-column align-items-center d-flex" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_4.jpg" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Waseem Nasser</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_2.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Andrew Rathore</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_3.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Vera Duncan</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-inner d-grid">
                     <div class="carousel-item active">
-                        <div class="cards_container d-flex justify-content-lg-between justify-content-center">
-                            <div class="card flex-column align-items-center justify-content-center d-flex"
-                                style="width: 18rem;">
-                                <img src="./assets/imgs/profile_2.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Andrew Rathore</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_3.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Vera Duncan</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_1.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Mark Smith</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
+                        <div class="card flex-column align-items-center d-flex border-0">
+                            <img src="./assets/imgs/profile_4.jpg" class="card-img-top" alt="profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-2 main-color">Waseem Nasser</h5>
+                                <p class="card-text text-capitalize fw-light main-color">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit. Nunc
+                                    ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="cards_container d-flex justify-content-lg-between justify-content-center">
-                            <div class="card flex-column align-items-center d-flex" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_3.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Vera Duncan</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_1.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Mark Smith</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
-                            </div>
-                            <div class="card flex-column align-items-center d-lg-flex d-none" style="width: 18rem;">
-                                <img src="./assets/imgs/profile_5.jpg" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Sam Altman</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
+                        <div class="card flex-column align-items-center d-lg-flex border-0">
+                            <img src="./assets/imgs/profile_2.png" class="card-img-top" alt="profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-2 main-color">Andrew Rathore</h5>
+                                <p class="card-text text-capitalize fw-light main-color">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit. Nunc
+                                    ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="cards_container d-flex justify-content-center">
-                            <div class="card d-flex flex-column align-items-center d-lg-none"
-                                style="width: 18rem;">
-                                <img src="./assets/imgs/profile_1.png" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Mark Smith</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
+                        <div class="card flex-column align-items-center d-lg-flex border-0">
+                            <img src="./assets/imgs/profile_3.png" class="card-img-top" alt="profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-2 main-color">Vera Duncan</h5>
+                                <p class="card-text text-capitalize fw-light main-color">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit. Nunc
+                                    ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="cards_container d-flex justify-content-center">
-                            <div class="card d-flex flex-column align-items-center d-lg-none"
-                                style="width: 18rem;">
-                                <img src="./assets/imgs/profile_5.jpg" class="card-img-top" alt="profile">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mt-2">Sam Altman</h5>
-                                    <p class="card-text text-capitalize fw-light">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing
-                                        elit. Nunc
-                                        ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
-                                </div>
+                        <div class="card d-flex flex-column align-items-center border-0">
+                            <img src="./assets/imgs/profile_1.png" class="card-img-top" alt="profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-2 main-color">Mark Smith</h5>
+                                <p class="card-text text-capitalize fw-light main-color">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit. Nunc
+                                    ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-flex flex-column align-items-center border-0">
+                            <img src="./assets/imgs/profile_5.jpg" class="card-img-top" alt="profile">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-2 main-color">Sam Altman</h5>
+                                <p class="card-text text-capitalize fw-light main-color">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing
+                                    elit. Nunc
+                                    ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-indicators d-flex m-0 align-items-center position-static">
+                <div class="carousel-indicators position-static d-flex align-items-center">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button class="button-mobile d-lg-none d-block" type="button"
+                        class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" class="rounded-circle" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" class="rounded-circle" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button class="button-mobile d-lg-none d-block rounded-circle" type="button"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button class="button-mobile d-lg-none d-block" type="button"
+                    <button class="button-mobile d-lg-none d-block rounded-circle" type="button"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
             </div>
         </section>
+        <!-- *********************** contact section *********************** -->
         <section id="contact"
             class="m-whiteSpacing d-flex flex-lg-row flex-column justify-content-between align-items-center m-t-section">
             <div class="contact-left d-lg-block d-none">
                 <img class="h-100 w-100" src="./assets/imgs/customer-support.png" alt="support">
             </div>
             <div class="contact-right contact-padding">
-                <h2 class="fw-bold mb-3">Be a part of the next big thing</h2>
-                <p class="contact-description fw-normal mb-4">We work with Brans, Startups, to SMEs. Colaborate for more
+                <h2 class="fw-bold mb-3 main-color">Be a part of the next big thing</h2>
+                <p class="contact-description fw-normal mb-4 main-color">We work with Brans, Startups, to SMEs.
+                    Colaborate for more
                     impact and growt
                 </p>
                 <button class="btn btn-primary text-uppercase border-0 p-0" type="submit">Contact us</button>
             </div>
         </section>
     </main>
+    <!-- *********************** footer ********************** -->
     <footer class="m-t-section whiteSpacing">
-        <div class="lists-container d-flex flex-lg-row flex-column justify-content-between text-lg-left">
-            <div class="brand-description">
-                <a class="text-decoration-none fw-bold" href="#hero">Digital Agency</a>
-                <p class="footer-description fw-light text-capitalize">Building digital products,brands & experience</p>
+        <div
+            class="lists-container d-flex flex-lg-row flex-column justify-content-between align-items-lg-start align-items-center ali text-lg-left">
+            <div class="brand-description main-color">
+                <a class="text-decoration-none fw-bold main-color" href="#hero">Digital Agency</a>
+                <p class="footer-description fw-light text-capitalize main-color">Building digital products,brands &
+                    experience</p>
             </div>
             <ul class="list-unstyled d-flex flex-column">
-                <li class="mb-2 fw-bold text-capitalize">Resources</li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#branding">Guides</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#custome">Blogs</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#reviews">Customer Stories</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">Glossery</a> </li>
+                <li class="mb-2 fw-bold text-capitalize main-color">Resources</li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#branding">Guides</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#custome">Blogs</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#reviews">Customer
+                        Stories</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">Glossery</a> </li>
             </ul>
             <ul class="list-unstyled d-flex flex-column">
-                <li class="mb-2 fw-bold text-capitalize">Company</li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">About Us</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">Careers</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#reviews">Partners</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#contact">Contact Us</a></li>
+                <li class="mb-2 fw-bold text-capitalize main-color">Company</li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">About Us</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">Careers</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#reviews">Partners</a>
+                </li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#contact">Contact Us</a>
+                </li>
             </ul>
             <ul class="list-unstyled d-flex flex-column">
-                <li class="mb-2 fw-bold text-capitalize">Social Media</li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">LinkedIn</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">Facebook</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">Instagram</a></li>
-                <li><a class="text-decoration-none fw-light text-capitalize" href="#">Twitter</a></li>
+                <li class="mb-2 fw-bold text-capitalize main-color">Social Media</li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">LinkedIn</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">Facebook</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">Instagram</a></li>
+                <li><a class="text-decoration-none fw-light text-capitalize main-color" href="#">Twitter</a></li>
             </ul>
         </div>
-        <p class="copyright text-center fw-light mb-0"> &copy; Matheus. Todos os direitos reservados</p>
+        <p class="copyright text-center fw-light mb-0 pb-3"> &copy; Matheus. Todos os direitos reservados</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
