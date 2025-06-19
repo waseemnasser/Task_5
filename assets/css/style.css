@@ -397,7 +397,7 @@ footer {
     }
 
     .card {
-        max-width: 100% !important;
+        max-width: 600px !important;
     }
 
     /* ********************** contact section small screen styling *************** */
